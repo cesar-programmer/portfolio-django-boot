@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'css/header.css' %}">
+  <link rel="stylesheet" href="{% static 'css/sections.css' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+
+  <header class="center-row">
+      <!-- left side -->
+    <div class="logo center-row">
+      <a href="">
+        <h2>Cesar C C</h2>
+      </a>
+    </div>
+
+    <!-- right side -->
+    <nav>
+      <!-- hamburger menu -->
+
+      <!-- Menu link options -->
+      <div class="nav-link center-row">
+        <a href="{% url 'about' %}">About me</a>
+        <a href="">Projects</a>
+        <a href="">Experience</a>
+        <a href="{% url 'contact' %}">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  {% block content %}{% endblock content %}
+
+  <footer>
+    <div class="footer-container ">
+      <div class="footer-logo">
+        <h2>Cesar C C</h2>
+      </div>
+      <nav class="footer-links ">
+        <a href="{% url 'about' %}">About me</a>
+        <a href="">Projects</a>
+        <a href="">Experience</a>
+        <a href="{% url 'contact' %}">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

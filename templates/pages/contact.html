@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block content %}
+<div></div>
+<div class="center-column">
+  <h1>Contact Me</h1>
+  <p>Send me an email or a message through the contact form.</p>
+  <form class="contact-form">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit" class="submit-button">Send Message</button>
+  </form>
+
+  <div>
+    <h2>My social media</h2>
+    <div class="social-media-container">
+      <a href="https://www.linkedin.com/in/cesar-cordova-contreras-7b1b3b1b4/" target="_blank">
+        <img src="{% static 'img/linkedin.png' %}" alt="linkedin logo">
+      </a>
+      <a href="" target="_blank">
+        <img src="{% static 'img/github.png' %}" alt="github logo">
+      </a>
+      <a href="" target="_blank">
+        <img src="{% static 'img/twitter.png' %}" alt="twitter logo">
+      </a>
+  </div>
+  </div>
+</div>
+
+  {% endblock %}

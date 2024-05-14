@@ -1,0 +1,92 @@
+/* ----About me section---- */
+.about-section {
+  padding: 2rem;
+}
+
+.about-image-container img {
+  width: 80%;
+  display: block;
+  margin: auto ;
+  margin-bottom: 200px;
+  border-radius: 30%;
+}
+.about-image-container {
+  flex: 1 1 40%;
+  padding: 0 2rem;
+}
+.about-description-container {
+  flex: 1 1 60%;
+  padding: 0 2rem;
+}
+
+
+.about-description-container p{
+  width: 80%;
+  margin: 2rem 0px;
+}
+
+/* ----Projects section---- */
+
+.project-section {
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.project-card {
+  width: 300px;
+  background-color: var(--surface-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info h3 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.project-info p {
+  color: var(--neutral-color);
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.project-tags {
+  margin: 1rem 0;
+  display: flex;
+  gap: 10px;
+}
+
+.project-tags span {
+  background-color: var(--primary-color-100);
+  color: var(--background-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.project-year {
+  font-weight: bold;
+  color: var(--secondary-color-600);
+}
+

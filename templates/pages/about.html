@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="about-section ">
+
+  <div class="about-image-container ">
+    <img src="{% static 'img/me.jpg' %}" alt="my logo">
+  </div>
+
+  <div class="about-description-container center-column" >
+
+    <div class="center-column">
+      <h1>Full Stack Developer</h1>
+      <h2>Cesar Cordova Contreras</h2>
+    </div>
+
+    <p>
+      I am a proactive person and I possess outstanding teamwork skills, always being responsible, organized and creative. 
+      My goal is to excel as a Full Stack Developer, providing innovative and effective solutions in each project. I am committed to constantly updating and improving my technical skills and knowledge.
+    </p>
+
+  <div class="skill-list center-column">
+    <h2>My skills</h2>
+
+    <div class="tags-container">
+      <label>Java Script </label>
+      <label>Node JS</label>
+      <label>React JS</label>
+      <label>Express JS</label>
+      <label>Postgre sql</label>
+      <label>Vite JS</label>
+      <label>Contributor</label>
+      <label>Empathetic</label>
+      <label>Organized</label>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+<!-- Project section -->
+<section class="project-section center-column">
+  <h2>Projects</h2>
+  <div class="projects-container">
+      <div class="project-card">
+          <img src="{% static 'img/picture-1.jpg' %}" alt="Project image">
+          <div class="project-info">
+              <h3>Project Name</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, saepe! Magni, </p>
+              <div class="project-tags">
+                  <span>Django</span>
+                  <span>CSS</span>
+                  <span>HTML</span>
+                  <span>Other</span>
+              </div>
+              <span class="project-year">2020</span>
+          </div>
+      </div>
+      <div class="project-card">
+        <img src="{% static 'img/picture-1.jpg' %}" alt="Project image">
+        <div class="project-info">
+            <h3>Project Name</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, saepe! Magni, </p>
+            <div class="project-tags">
+                <span>Django</span>
+                <span>CSS</span>
+                <span>HTML</span>
+                <span>Other</span>
+            </div>
+            <span class="project-year">2020</span>
+        </div>
+    </div>
+    <div class="project-card">
+      <img src="{% static 'img/picture-1.jpg' %}" alt="Project image">
+      <div class="project-info">
+          <h3>Project Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, saepe! Magni, </p>
+          <div class="project-tags">
+              <span>Django</span>
+              <span>CSS</span>
+              <span>HTML</span>
+              <span>Other</span>
+          </div>
+          <span class="project-year">2020</span>
+      </div>
+  </div>
+
+  </div>
+</section>
+{% endblock %}

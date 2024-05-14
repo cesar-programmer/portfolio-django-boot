@@ -1,0 +1,68 @@
+header{
+  background-color: var(--surface-color);
+  height: 60px;
+  position: sticky;
+  top: 0px;
+
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Adjusts children elements to be spaced evenly */
+  align-items: center; /* Vertically center aligns the content */
+  padding: 0 10%; /* Add padding on the sides for better spacing */
+  height: 100%; /* Ensures the footer uses the assigned height fully */
+  background-color: var(--secondary-color-900); /* Consistent background color */
+}
+
+.footer-links a {
+  color: var(--neutral-color);
+  font-size: 1rem; /* Adjust font size as needed */
+  font-weight: 500; /* Medium font weight */
+  text-transform: uppercase; /* Keeps text in uppercase */
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.footer-links a:hover {
+  border-bottom: solid 0.1rem var(--primary-color); /* Change to primary color on hover */
+}
+
+
+
+/* left-side */
+.logo{
+  width: 20%;
+  height: 100%;
+
+
+}
+
+/* right-side */
+
+nav{
+  width: 80%;
+  height: 100%;
+
+}
+
+.nav-link {
+  height: 100%;
+
+}
+
+.nav-link a {
+  color: var(--neutral-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 2%;
+  padding: 1% 2%;
+  font-weight: 500;
+  border-bottom: solid 0.1rem transparent; /* Make the border transparent initially */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.nav-link a:hover {
+  border-bottom: solid 0.1rem var(--primary-color); /* Change to primary color on hover */
+}

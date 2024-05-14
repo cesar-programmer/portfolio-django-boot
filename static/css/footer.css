@@ -1,0 +1,63 @@
+footer {
+  background-color: var(--surface-color);
+  height: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  margin-top: 20px; /* Adds some space between the footer and the content */
+}
+
+
+.footer-logo {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  width: 20%; /* Adjust the width as necessary */
+  height: 100%;
+}
+
+
+.footer-links {
+  display: flex;
+  align-items: center; /* Vertically centers the links */
+  justify-content: flex-end; /* Aligns the navigation links to the right */
+  width: 80%; /* Takes remaining space in the footer */
+  height: 100%;
+}
+
+.footer-links a {
+  color: var(--neutral-color);
+  font-size: 1rem; /* Same styling as header links */
+  text-transform: uppercase;
+  margin: 2%;
+  padding: 1% 2%;
+  font-weight: 500;
+  border-bottom: solid 0.1rem transparent; /* Same as header for consistency */
+  transition: border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.footer-links a:hover {
+  border-bottom: solid 0.1rem var(--primary-color); /* Highlight on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stacks elements vertically on smaller screens */
+    padding: 20px 0; /* Adds vertical padding */
+  }
+
+  .footer-logo, .footer-links {
+    width: 100%; /* Full width for responsiveness */
+    justify-content: center; /* Center-aligns elements */
+  }
+
+  .footer-links {
+    margin-top: 10px; /* Adds some space between logo and links */
+  }
+}
